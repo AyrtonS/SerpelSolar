@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#fefeff"
+        android:backgroundTintMode="multiply"
+        android:nestedScrollingEnabled="true"
+        android:scrollIndicators="right"
+        >
+
+
+
+        <requestFocus
+            android:layout_below="@+id/scrollView"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enviar"
+            android:id="@+id/button"
+            android:onClick="salvarBD"
+            android:background="#000080"
+            android:layout_marginTop="79dp"
+            android:textColor="#ffffff"
+            android:layout_below="@+id/editText3"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:typeface="serif" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:id="@+id/editText3"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:hint=" Descreva Seu Serviço"
+            style="@style/AlertDialog.AppCompat"
+            android:layout_marginTop="58dp"
+            android:textColorHighlight="#0a22bc"
+            android:layout_below="@+id/radioGroup"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:typeface="serif" />
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/scrollView"
+            android:layout_alignTop="@+id/editText3"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:inputType="textPersonName"
+            android:hint="Digite aqui o nome do cliente"
+            android:ems="10"
+            android:id="@+id/editText4"
+            style="@style/AlertDialog.AppCompat"
+            android:background="#f7f6f6"
+            android:textColor="#000000"
+            android:shadowColor="#070707"
+            android:layout_marginTop="41dp"
+            android:layout_below="@+id/textView5"
+            android:layout_alignLeft="@+id/textView5"
+            android:layout_alignStart="@+id/textView5"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:textColorHighlight="#052796"
+            android:textSize="13dp"
+            android:typeface="serif" />
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/scrollView2"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/scrollView"
+            android:layout_toEndOf="@+id/scrollView" >
+
+        </ScrollView>
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/scrollView3"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/linearLayout" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout"
+            android:weightSum="1"
+            android:layout_below="@+id/scrollView2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/scrollView4"
+                android:layout_gravity="center_horizontal" />
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/scrollView5"
+            android:layout_alignTop="@+id/editText3"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/editText5"
+            android:hint="Digite aqui o preço do serviço. ex: 10"
+            style="@style/AlertDialog.AppCompat"
+            android:background="#f7f6f6"
+            android:textColor="#000000"
+            android:textSize="13dp"
+            android:textColorHighlight="#0b18c7"
+            android:layout_below="@+id/editText6"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="19dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:typeface="serif" />
+
+        <Space
+            android:layout_width="20px"
+            android:layout_height="20px"
+            android:layout_below="@+id/scrollView3"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:background="#06065b"
+            android:backgroundTint="#080c71"
+            android:id="@+id/space" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioGroup"
+            android:foregroundTint="#dc0000"
+            android:baselineAligned="false"
+            android:layout_below="@+id/editText5"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="26dp">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Projeto Convencional"
+                android:id="@+id/radioButton2"
+                android:textStyle="italic"
+                android:textColor="@color/abc_primary_text_disable_only_material_light"
+                android:checked="false"
+                android:layout_below="@+id/textView2"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="24dp"
+                android:enabled="true"
+                android:backgroundTint="#0214ba"
+                android:typeface="serif" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Projeto Solar"
+                android:id="@+id/radioButton"
+                android:textColor="@color/abc_primary_text_disable_only_material_light"
+                android:textStyle="italic"
+                android:checked="false"
+                android:layout_below="@+id/radioButton2"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:typeface="serif" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Outro"
+                android:id="@+id/radioButton3"
+                android:textStyle="italic"
+                android:textColor="@color/abc_primary_text_disable_only_material_light"
+                android:checked="false"
+                android:layout_below="@+id/radioButton4"
+                android:layout_alignLeft="@+id/radioButton4"
+                android:layout_alignStart="@+id/radioButton4"
+                android:typeface="serif" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Manutenção"
+                android:id="@+id/radioButton4"
+                android:textStyle="italic"
+                android:textColor="@color/abc_primary_text_disable_only_material_light"
+                android:checked="false"
+                android:layout_above="@+id/radioButton"
+                android:layout_toRightOf="@+id/textView2"
+                android:layout_toEndOf="@+id/textView2"
+                android:typeface="serif" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cadastrar Novo Serviço"
+            android:id="@+id/textView5"
+            android:textSize="20dp"
+            android:layout_below="@+id/space"
+            android:layout_centerHorizontal="true"
+            android:typeface="serif" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText"
+            android:text="Cliente"
+            android:textSize="18dp"
+            android:layout_below="@+id/textView5"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="15dp"
+            android:typeface="serif" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText6"
+            android:text="Preço"
+            android:textSize="18dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/editText4"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:typeface="serif" />
+
+    </RelativeLayout>
+
+</ScrollView>

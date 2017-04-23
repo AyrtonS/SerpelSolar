@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.example.earth.serpelsolar.MainActivity"
+
+    >
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView"
+        android:visibility="visible"
+        android:choiceMode="singleChoice"
+        android:divider="#CCC"
+        android:drawSelectorOnTop="true"
+        android:fastScrollEnabled="false"
+        android:fastScrollAlwaysVisible="false"
+        android:footerDividersEnabled="false"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textAlignment="center"
+        android:dividerHeight="1dp"
+        android:layout_above="@+id/digitalClock"
+        android:layout_alignParentTop="true" />
+
+    <DigitalClock
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/digitalClock"
+        android:textSize="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <!--<WebView  xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/webview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        /> -->
+
+
+</RelativeLayout>
